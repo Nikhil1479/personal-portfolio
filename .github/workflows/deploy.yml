@@ -46,7 +46,7 @@ jobs:
       - name: Clear npm cache and install dependencies
         run: |
           npm cache clean --force
-          rm -rf node_modules package-lock.json dist
+          rm -rf node_modules package-lock.json build
           npm install
         
       - name: Build project
@@ -55,10 +55,10 @@ jobs:
           echo "Current commit: ${{ github.sha }}"
           echo "Building project..."
           npm run build
-          echo "Build completed. Checking dist directory:"
-          ls -la dist/
-          echo "Dist directory contents:"
-          find dist/ -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -10
+          echo "Build completed. Checking build directory:"
+          ls -la build/
+          echo "Build directory contents:"
+          find build/ -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -10
           echo "=== Build process completed ==="
 
         
@@ -68,25 +68,25 @@ jobs:
       - name: Verify build output
         run: |
           echo "=== Verifying build output ==="
-          if [ ! -d "dist" ]; then
-            echo "❌ Error: dist directory not found!"
+          if [ ! -d "build" ]; then
+            echo "❌ Error: build directory not found!"
             exit 1
           fi
           
-          if [ ! -f "dist/index.html" ]; then
-            echo "❌ Error: index.html not found in dist!"
+          if [ ! -f "build/index.html" ]; then
+            echo "❌ Error: index.html not found in build!"
             exit 1
           fi
           
           echo "✅ Build verification passed"
-          echo "Files in dist:"
-          find dist/ -type f | sort
+          echo "Files in build:"
+          find build/ -type f | sort
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist directory created by build
-          path: './dist'
+          # Upload build directory created by react-scripts
+          path: './build'
           
       - name: Deploy to GitHub Pages
         id: deployment

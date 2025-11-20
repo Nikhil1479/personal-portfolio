@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.34d0e02b.css",
+    "main.js": "/personal-portfolio/static/js/main.2be69fe8.js",
+    "static/js/453.2fa7cac9.chunk.js": "/personal-portfolio/static/js/453.2fa7cac9.chunk.js",
+    "static/media/nikhil-about1.jpg": "/personal-portfolio/static/media/nikhil-about1.ccb9849c6f0e79e5fff3.jpg",
+    "static/media/cv.pdf": "/personal-portfolio/static/media/cv.1676dcdc83730930d888.pdf",
+    "static/media/Gemini nikhil.png": "/personal-portfolio/static/media/Gemini nikhil.f6ba3dd3df7b1bc45d76.png",
+    "index.html": "/personal-portfolio/index.html",
+    "main.34d0e02b.css.map": "/personal-portfolio/static/css/main.34d0e02b.css.map",
+    "main.2be69fe8.js.map": "/personal-portfolio/static/js/main.2be69fe8.js.map",
+    "453.2fa7cac9.chunk.js.map": "/personal-portfolio/static/js/453.2fa7cac9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34d0e02b.css",
+    "static/js/main.2be69fe8.js"
+  ]
+}

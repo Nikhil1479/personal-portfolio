@@ -51,7 +51,7 @@ export const Timeline = ({
               </div>
               <div className="hidden md:block md:pl-20 transition-all duration-300 group-hover:translate-x-2">
                 <h3
-                  className="text-xl md:text-6xl font-extrabold bg-gradient-to-r from-neutral-400 to-neutral-600 bg-clip-text text-transparent transition-all duration-300 group-hover:from-purple-400 group-hover:to-blue-500">
+                  className="text-xl md:text-5xl font-extrabold bg-gradient-to-r from-neutral-400 to-neutral-600 bg-clip-text text-transparent transition-all duration-300 group-hover:from-purple-400 group-hover:to-blue-500">
                   {item.title}
                 </h3>
                 {item.duration && (

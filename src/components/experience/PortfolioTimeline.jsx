@@ -23,11 +23,11 @@ export function PortfolioTimeline() {
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-purple-400" style={{ color: "var(--color-primary)" }}>
-                                Software Developer Engineer 1
-                            </h3>
-                            <div className="flex items-center gap-2">
-                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30">💼 Full-Time</span>
+                            <div className="flex items-end gap-2 flex-wrap">
+                                <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-purple-400" style={{ color: "var(--color-primary)" }}>
+                                    Software Developer Engineer 1
+                                </h3>
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30 mb-0.1">Full-Time</span>
                             </div>
                             <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>
@@ -36,7 +36,7 @@ export function PortfolioTimeline() {
                         Leading full-stack development projects using React, Node.js, and modern web technologies.
                         Implemented CI/CD pipelines and mentored junior developers.
                     </p>
-                    <div className="description__container">
+                    <div className="glass-card">
                         <div >
                             <h4 className="font-semibold mb-2" style={{ color: "var(--color-primary)" }}>Key Achievements:</h4>
                             <ul className="list-disc list-inside text-neutral-300 text-sm space-y-1">
@@ -67,11 +67,11 @@ export function PortfolioTimeline() {
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-green-400" style={{ color: "var(--color-primary)" }}>
-                                Product Engineering Intern
-                            </h3>
-                            <div className="flex items-center gap-2">
-                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border border-green-500/30">🎓 Internship</span>
+                            <div className="flex items-end gap-2 flex-wrap">
+                                <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-green-400" style={{ color: "var(--color-primary)" }}>
+                                    Product Engineering Intern
+                                </h3>
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border border-green-500/30 mb-0.1">Internship</span>
                             </div>
                             <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>
@@ -93,7 +93,7 @@ export function PortfolioTimeline() {
             ),
         },
         {
-            title: "May 2023",
+            title: "2023",
             duration: "May 2023 - July 2023",
             content: (
                 <div>
@@ -110,11 +110,11 @@ export function PortfolioTimeline() {
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-orange-400" style={{ color: "var(--color-primary)" }}>
-                                Summer Intern
-                            </h3>
-                            <div className="flex items-center gap-2">
-                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 text-orange-400 border border-orange-500/30">☀️ Summer</span>
+                            <div className="flex items-end gap-2 flex-wrap">
+                                <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-orange-400" style={{ color: "var(--color-primary)" }}>
+                                    Summer Intern
+                                </h3>
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border border-green-500/30 mb-0.1">Internship</span>
                             </div>
                             <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>

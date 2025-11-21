@@ -6,8 +6,8 @@ import hrc from "../../assets/highradius.png"
 export function PortfolioTimeline() {
     const data = [
         {
-            title: "2024",
-            duration: "July 2024 - Present",
+            title: "2025",
+            duration: "Feb 2025 - Present",
             content: (
                 <div>
                     <div className="flex items-center gap-4 mb-4 timeline-header">
@@ -33,16 +33,65 @@ export function PortfolioTimeline() {
                         </div>
                     </div>
                     <p className="text-neutral-300 text-sm md:text-base mb-4">
-                        Leading full-stack development projects using React, Node.js, and modern web technologies.
-                        Implemented CI/CD pipelines and mentored junior developers.
+                        Built a cloud-agnostic inference framework using Kubernetes, FastAPI, Docker, MySQL, and AES-256 encryption,
+                        supporting multiple AI/ML use cases.
+                        Developed the testing framework using pyTest and integrated wiht  CI-CD Pipeline for AI Product testing inorder to enhance the code quality.
                     </p>
                     <div className="glass-card">
                         <div >
                             <h4 className="font-semibold mb-2" style={{ color: "var(--color-primary)" }}>Key Achievements:</h4>
                             <ul className="list-disc list-inside text-neutral-300 text-sm space-y-1">
-                                <li>Deployed 10+ production applications</li>
-                                <li>Improved app performance by 40%</li>
-                                <li>Mentored 5 junior developers</li>
+                                <li>Migrated infra from ECS (AWS) and Docker Swarm to Kubernetes + ArgoCD, reducing cloud costs by $200/month and
+                                    speeding deployments by 40%.</li>
+                                <li>Implemented Database-as-Config architecture for dynamic GenAI use case onboarding.</li>
+                                <li>Developed a Dependency Injection Framework using `aglyph` for isolated testing.</li>
+                                <li> Created a YAML-config offline API Testing Suite (CLI + UI + WebSocket) with regression alerts.</li>
+                                <li>Wrote unit/integration tests for GenAI pipelines, ensuring production reliability.</li>
+                                <li>Practiced full-cycle cloud-native engineering with CI/CD pipelines using Jenkins, Gitlab CI.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "2024",
+            duration: "July 2024 - Jan 2025",
+            content: (
+                <div>
+                    <div className="flex items-center gap-4 mb-4 timeline-header">
+                        <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden bg-white transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+                            <img
+                                src={hrc}
+                                alt="Company Logo"
+                                className="w-full h-full object-cover"
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                    e.target.parentElement.innerHTML = '<span class="text-xl font-bold" style="color: var(--color-primary)">HRC</span>';
+                                }}
+                            />
+                        </div>
+                        <div>
+                            <div className="flex items-end gap-2 flex-wrap">
+                                <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-purple-400" style={{ color: "var(--color-primary)" }}>
+                                    ASE 1
+                                </h3>
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30 mb-0.1">Full-Time</span>
+                            </div>
+                            <p className="text-sm text-neutral-400">Highradius Technologies</p>
+                        </div>
+                    </div>
+                    <p className="text-neutral-300 text-sm md:text-base mb-4">
+                        Developed multiple Generative AI use cases that automated finance collection, reducing manual collector effort.
+                    </p>
+                    <div className="glass-card">
+                        <div >
+                            <h4 className="font-semibold mb-2" style={{ color: "var(--color-primary)" }}>Key Achievements:</h4>
+                            <ul className="list-disc list-inside text-neutral-300 text-sm space-y-1">
+                                <li>Delivered Smart Email Composer with RAG to generate contextual replies, reducing drafting time by ~60%.</li>
+                                <li>Built and deployed Email Intent Classifier & Entity Extractor using DistilBERT & spaCy, auto-triaging 1000+ emails/day.</li>
+                                <li>Engineered Call Summary & Action Generator automating post-call notes, reducing effort by ~80%.</li>
+                                <li>Designed Best Time to Call/Email engine using feature scoring to optimize customer communication.</li>
                             </ul>
                         </div>
                     </div>
@@ -51,7 +100,7 @@ export function PortfolioTimeline() {
         },
         {
             title: "2023-2024",
-            duration: "January 2023 - June 2024",
+            duration: "June 2023 - June 2024",
             content: (
                 <div>
                     <div className="flex items-center gap-4 mb-4 timeline-header">

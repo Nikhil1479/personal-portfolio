@@ -18,7 +18,7 @@ const Header = () => {
             <span className="typing__cursor">|</span>
           </h5>
           <p className="header__subtitle">
-            Building scalable applications with React, Node.js, and AI/ML technologies
+            Building AI-driven systems with advanced machine learning
           </p>
         </div>
 

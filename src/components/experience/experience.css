@@ -65,8 +65,7 @@
     overflow: hidden;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-                0 0 20px rgba(138, 43, 226, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .experience__card::before {
@@ -108,8 +107,7 @@
 .experience__card:hover {
     transform: translateY(-10px);
     border-color: rgba(138, 43, 226, 0.4);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2),
-                0 0 40px rgba(138, 43, 226, 0.3);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     background: linear-gradient(
         135deg,
         rgba(138, 43, 226, 0.08) 0%,
@@ -140,7 +138,6 @@
 
 .card__icon {
     font-size: 2rem;
-    filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.5));
     animation: float 3s ease-in-out infinite;
 }
 
@@ -202,7 +199,6 @@
 
 .experience__details:hover .experience__details-icon {
     transform: scale(1.2) rotate(360deg);
-    filter: drop-shadow(0 0 8px var(--color-primary));
 }
 
 .experience__details h4 {

@@ -14,7 +14,6 @@ const Experience = () => {
                 <div className="experience__frontend experience__card">
                     <div className="card__glow"></div>
                     <h3>
-                        <span className="card__icon">💻</span>
                         Frontend Development
                     </h3>
                     <div className="experience__content">
@@ -64,7 +63,6 @@ const Experience = () => {
                 <div className="experience__backend experience__card">
                     <div className="card__glow"></div>
                     <h3>
-                        <span className="card__icon">⚙️</span>
                         Backend Development
                     </h3>
                     <div className="experience__content">

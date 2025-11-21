@@ -25,7 +25,7 @@ export function PortfolioTimeline() {
                         <div>
                             <div className="flex items-end gap-2 flex-wrap">
                                 <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-purple-400" style={{ color: "var(--color-primary)" }}>
-                                    Software Developer Engineer 1
+                                    SDE 1
                                 </h3>
                                 <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30 mb-0.1">Full-Time</span>
                             </div>

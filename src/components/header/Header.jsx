@@ -1,6 +1,6 @@
 import React from 'react'
 import CTA from "./CTA"
-import ME from "../../assets/Gemini nikhil.png"
+import ME from "../../assets/nikhil-beach.jpg"
 import HeaderSocials from './HeaderSocials'
 
 import "./header.css"
@@ -14,7 +14,7 @@ const Header = () => {
             <span className="name__gradient">Nikhil Gupta</span>
           </h1>
           <h5 className='text-light header__title'>
-            <span className="typing__text">Full Stack Developer</span>
+            <span className="typing__text">Python Developer</span>
             <span className="typing__cursor">|</span>
           </h5>
           <p className="header__subtitle">

@@ -3,6 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { FaTimeline } from "react-icons/fa6";
 
 
 
@@ -55,10 +56,11 @@ const Nav = () => {
 
     return (
         <nav>
-            <NavItem Icon={AiOutlineHome} setIsActive={setIsActive} isActive={isActive} id="#header" className="home" />
-            <NavItem Icon={AiOutlineUser} setIsActive={setIsActive} isActive={isActive} id="#about" />
-            <NavItem Icon={BiBook} setIsActive={setIsActive} isActive={isActive} id="#experience" />
-            <NavItem Icon={BiMessageSquareDetail} setIsActive={setIsActive} isActive={isActive} id="#contact" />
+            <NavItem Icon={AiOutlineHome} setIsActive={setIsActive} isActive={isActive} id="#header" className="home" label="Home" />
+            <NavItem Icon={AiOutlineUser} setIsActive={setIsActive} isActive={isActive} id="#about" label="About" />
+            <NavItem Icon={FaTimeline} setIsActive={setIsActive} isActive={isActive} id="#timeline" label="Timeline" />
+            <NavItem Icon={BiBook} setIsActive={setIsActive} isActive={isActive} id="#experience" label="Experience" />
+            <NavItem Icon={BiMessageSquareDetail} setIsActive={setIsActive} isActive={isActive} id="#contact" label="Contact" />
         </nav>
     )
 }

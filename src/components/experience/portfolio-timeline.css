@@ -1,0 +1,71 @@
+/* Custom styles for Portfolio Timeline */
+.timeline-container {
+  background-color: var(--color-bg);
+  padding: 2rem 0;
+}
+
+/* Ensure timeline works well with existing portfolio theme */
+.timeline-content {
+  color: var(--color-white);
+}
+
+.timeline-content h3 {
+  color: var(--color-primary);
+}
+
+.timeline-content p {
+  color: var(--color-light);
+}
+
+
+.description__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.description__container > div{
+    background: var(--color-bg-variant);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.description__container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+/* ========================= Media Queries for Medium Devices =========================*/
+
+@media screen and (max-width: 1024px) {
+    .description__container{
+        grid-template-columns: 1fr;
+    }
+
+    .description__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content{
+        padding: 1rem;
+    }
+}
+
+/* ========================= Media Queries for Small Devices =========================*/
+
+@media screen and (max-width: 600px) {
+    .description__container{
+        gap: 1rem;
+    }
+
+    .description__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+    }
+}

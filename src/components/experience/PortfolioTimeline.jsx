@@ -7,10 +7,11 @@ export function PortfolioTimeline() {
     const data = [
         {
             title: "2024",
+            duration: "July 2024 - Present",
             content: (
                 <div>
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden bg-white">
+                    <div className="flex items-center gap-4 mb-4 timeline-header">
+                        <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden bg-white transition-transform duration-300 hover:scale-110 hover:shadow-xl">
                             <img
                                 src={hrc}
                                 alt="Company Logo"
@@ -22,9 +23,12 @@ export function PortfolioTimeline() {
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold" style={{ color: "var(--color-primary)" }}>
+                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-purple-400" style={{ color: "var(--color-primary)" }}>
                                 Software Developer Engineer 1
                             </h3>
+                            <div className="flex items-center gap-2">
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30">💼 Full-Time</span>
+                            </div>
                             <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>
                     </div>
@@ -46,30 +50,35 @@ export function PortfolioTimeline() {
             ),
         },
         {
-            title: "2023",
+            title: "2023-2024",
+            duration: "January 2023 - June 2024",
             content: (
                 <div>
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden">
+                    <div className="flex items-center gap-4 mb-4 timeline-header">
+                        <div className="bg-white w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-110 hover:shadow-xl">
                             <img
-                                src="/path/to/company2-logo.png"
+                                src={hrc}
                                 alt="Company Logo"
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
                                     e.target.style.display = 'none';
-                                    e.target.parentElement.innerHTML = '<span class="text-xl font-bold" style="color: var(--color-primary)">SD</span>';
+                                    e.target.parentElement.innerHTML = '<span class="text-xl font-bold" style="color: var(--color-primary)">HRC</span>';
                                 }}
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold" style={{ color: "var(--color-primary)" }}>
-                                Full Stack Developer
+                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-green-400" style={{ color: "var(--color-primary)" }}>
+                                Product Engineering Intern
                             </h3>
-                            <p className="text-sm text-neutral-400">Startup Digital</p>
+                            <div className="flex items-center gap-2">
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border border-green-500/30">🎓 Internship</span>
+                            </div>
+                            <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>
                     </div>
                     <p className="text-neutral-300 text-sm md:text-base mb-4">
-                        Developed responsive web applications with focus on user experience and performance optimization.
+                        <div>Developed a B2B Invoice Management System using React, Java Servlets, and JDBC with ML-powered predictions. </div>
+                        <div>Built a Receivables Dashboard on AWS EC2 with visualization, editing, and live inference. </div>
                     </p>
                     <div className="glass-card">
                         <h4 className="font-semibold mb-2" style={{ color: "var(--color-primary)" }}>Technologies:</h4>
@@ -84,38 +93,40 @@ export function PortfolioTimeline() {
             ),
         },
         {
-            title: "2022",
+            title: "May 2023",
+            duration: "May 2023 - July 2023",
             content: (
                 <div>
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden">
+                    <div className="flex items-center gap-4 mb-4 timeline-header">
+                        <div className="bg-white w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-110 hover:shadow-xl">
                             <img
-                                src="/path/to/company3-logo.png"
-                                alt="Company Logo"
+                                src={hrc}
+                                alt="HRC Logo"
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
                                     e.target.style.display = 'none';
-                                    e.target.parentElement.innerHTML = '<span class="text-xl font-bold" style="color: var(--color-primary)">WS</span>';
+                                    e.target.parentElement.innerHTML = '<span class="text-xl font-bold" style="color: var(--color-primary)">HRC</span>';
                                 }}
                             />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold" style={{ color: "var(--color-primary)" }}>
-                                Frontend Developer
+                            <h3 className="text-xl md:text-2xl font-bold mt-1 transition-colors duration-300 hover:text-orange-400" style={{ color: "var(--color-primary)" }}>
+                                Summer Intern
                             </h3>
-                            <p className="text-sm text-neutral-400">Web Solutions Ltd.</p>
+                            <div className="flex items-center gap-2">
+                                <span className="text-xs px-2 py-1 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 text-orange-400 border border-orange-500/30">☀️ Summer</span>
+                            </div>
+                            <p className="text-sm text-neutral-400">Highradius Technologies</p>
                         </div>
                     </div>
                     <p className="text-neutral-300 text-sm md:text-base mb-4">
-                        Started my journey in web development, building beautiful and functional user interfaces.
+                        Designed a fullstack AI Enabled Invoice Management System.
                     </p>
                     <div className="glass-card">
                         <h4 className="font-semibold mb-2" style={{ color: "var(--color-primary)" }}>Projects Completed:</h4>
                         <div className="space-y-2 text-neutral-300 text-sm">
-                            <div>✅ E-commerce Platform</div>
-                            <div>✅ Portfolio Website</div>
-                            <div>✅ Task Management App</div>
-                            <div>✅ Weather Dashboard</div>
+                            <div>Engineered a predictive invoice module using ML to forecast order amounts.</div>
+                            <div>Integrated frontend and backend for dynamic invoice updates. </div>
                         </div>
                     </div>
                 </div>

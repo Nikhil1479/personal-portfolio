@@ -5,12 +5,18 @@ import './experience.css';
 const Experience = () => {
     return (
         <section id='experience'>
-            <h5>What Skills I Have</h5>
-            <h2>My Experience</h2>
+            <h5 className="section__subtitle">What Skills I Have</h5>
+            <h2 className="section__title">
+                <span className="title__gradient">My Experience</span>
+            </h2>
 
             <div className="container experience__container">
-                <div className="experience__frontend">
-                    <h3>Frontend Development</h3>
+                <div className="experience__frontend experience__card">
+                    <div className="card__glow"></div>
+                    <h3>
+                        <span className="card__icon">💻</span>
+                        Frontend Development
+                    </h3>
                     <div className="experience__content">
                         <article className='experience__details'>
                             <RiVerifiedBadgeFill className='experience__details-icon' />
@@ -55,8 +61,12 @@ const Experience = () => {
                     </div>
                 </div>
 
-                <div className="experience__backend">
-                    <h3>Frontend Development</h3>
+                <div className="experience__backend experience__card">
+                    <div className="card__glow"></div>
+                    <h3>
+                        <span className="card__icon">⚙️</span>
+                        Backend Development
+                    </h3>
                     <div className="experience__content">
                         <article className='experience__details'>
                             <RiVerifiedBadgeFill className='experience__details-icon' />

@@ -1,0 +1,38 @@
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5),
+                0 0 20px rgba(138, 43, 226, 0.3);
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+    mix-blend-mode: screen;
+}
+
+.cursor-particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+body {
+    cursor: none;
+}
+
+a, button, .btn, input, textarea, select {
+    cursor: none;
+}

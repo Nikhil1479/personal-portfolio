@@ -15,7 +15,7 @@ const Header = () => {
           </h1>
           <h5 className='text-light header__title'>
             <span className="typing__text">Python Developer</span>
-            <span className="typing__cursor">|</span>
+            <div className='block__cursor'></div>
           </h5>
           <p className="header__subtitle">
             Building AI-driven systems with advanced machine learning
@@ -30,7 +30,7 @@ const Header = () => {
           <div className="me__glow"></div>
           <img src={ME} alt="me" />
         </div>
-        <a href="#contact" className='scroll__down'> Scroll Down</a>
+        <a href="#experience" className='scroll__down'> Scroll Down</a>
       </div>
     </header>
   )

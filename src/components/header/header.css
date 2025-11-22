@@ -99,6 +99,12 @@ header::before {
     font-weight: 500;
 }
 
+.block__cursor{
+  height: 18px;
+  width: 8px;
+  background: var(--color-primary);
+  animation: blink 1s infinite;
+}
 .typing__cursor {
     animation: blink 1s infinite;
     color: var(--color-primary);

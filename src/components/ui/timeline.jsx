@@ -29,7 +29,7 @@ export const Timeline = ({
       className="w-full font-sans md:px-10"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl md:text-6xl mb-6 font-bold bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 bg-clip-text text-transparent max-w-4xl">
+        <h2 className="timeline__heading text-3xl md:text-6xl mb-6 font-bold bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 bg-clip-text text-transparent max-w-4xl">
           Professional Journey
         </h2>
         <p
